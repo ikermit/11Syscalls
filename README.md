@@ -13,10 +13,10 @@ I can use any help with this table and even provide more data over time.
 
 *Note: For some reason Windows 11 10.0.22000 and Windows 10 10.0.19044 are both named 21H2.
 
-# Older Versions of windows
+# Older windows builds
 For Windows versions such as 10.0.19044 (21H2) and below that check this repo: [j00ru/windows-syscalls](https://github.com/j00ru/windows-syscalls "j00ru/windows-syscalls")
 
-# How i gather these data?
+# How i collect these data?
 The concept is very simple First, We look up the `NtDll` file for a certain `OpCode` which for `Nt` functions usually is `4C 8B D1 B8`, Then the next `8 byte` is the `syscall number`, Then we extract all those numbers in order.
 
 # Usage
